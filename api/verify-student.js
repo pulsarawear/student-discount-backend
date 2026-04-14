@@ -27,7 +27,7 @@ async function createShopifyDiscountCode(discountCode) {
           target_selection: 'all',
           allocation_method: 'across',
           value_type: 'percentage',
-          value: '-10.0',
+          value: '-15.0',
           customer_selection: 'all',
           starts_at: new Date().toISOString(),
           usage_limit: 1,
@@ -69,7 +69,7 @@ async function sendDiscountEmail(toEmail, studentName, discountCode) {
     subject: 'Your Student Discount Code',
     html: `
       <p>Hi ${studentName},</p>
-      <p>Thanks for verifying your student status! Here is your exclusive 10% discount code:</p>
+      <p>Thanks for verifying your student status! Here is your exclusive 15% discount code:</p>
       <h2 style="color: #4a90e2;">${discountCode}</h2>
       <p>
         <a href="${storeUrl}" style="background:#4a90e2;color:#fff;padding:12px 24px;border-radius:4px;text-decoration:none;">
