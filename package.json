@@ -1,0 +1,15 @@
+{
+  "name": "student-discount-backend",
+  "version": "1.0.0",
+  "description": "Student discount verification backend for Shopify — uses .edu email check, no AI API needed",
+  "main": "api/verify-student.js",
+  "scripts": {
+    "start": "node api/verify-student.js"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.0"
+  },
+  "engines": {
+    "node": ">=18.x"
+  }
+}
